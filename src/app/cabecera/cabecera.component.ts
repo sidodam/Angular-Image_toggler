@@ -11,7 +11,7 @@ export class CabeceraComponent implements OnInit {
   @Output('DesparecerEvent') imageEvent2 = new EventEmitter<boolean>();
 
   isOpened: boolean = false;
-  wasClicked: boolean = true;
+  wasClicked: boolean = false;
 
   constructor() {}
 
@@ -23,7 +23,7 @@ export class CabeceraComponent implements OnInit {
   }
 
   desparecerEventEmitting() {
-    this.wasClicked = this.wasClicked;
+    this.wasClicked = !this.wasClicked;
     this.imageEvent2.emit(this.wasClicked);
   }
 }

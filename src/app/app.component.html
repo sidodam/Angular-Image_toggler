@@ -4,19 +4,11 @@
 
 <!-- simply pass a boolean value from child to here via output -->
 
-<div>
-
-</div>
+<div></div>
 <app-cabecera (ToggleEvent)="onToggleReceived($event)" (DesparecerEvent)="onDespareceReceived($event)">
-
-
-
-
    <div>
-      <img #ImageVariavble src="../assets/bear.jpg" alt="image">
+      <img #ImageVariavble src="../assets/bear.jpg" alt="image" />
    </div>
-
-
 
    <!-- ALTERNATIVE -->
 
@@ -24,9 +16,6 @@
       <img [src]="(booleanContainer? '../assets/bear.jpg' : '../assets/woods.jpg')" alt="image">
       <p [(ngModel)]="booleanContainer"></p>
    </div> -->
-
-
-
 
    <!-- ALTERNATIVE -->
 
@@ -40,6 +29,4 @@
       <img src="../assets/woods.jpg" alt="image">
       <p>{{booleanContainer}}</p>
    </div> -->
-
-
 </app-cabecera>

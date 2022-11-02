@@ -19,14 +19,14 @@
 
    <!-- ALTERNATIVE -->
 
-   <!-- 
-   <div [hidden]="despareceClicked" *ngIf=!booleanContainer>
+  <!-- <div [hidden]="despareceClicked" *ngIf="!booleanContainer; else Woods">
       <img src="../assets/bear.jpg" alt="image">
       <p>{{booleanContainer}}</p>
    </div>
 
-   <div [hidden]="despareceClicked" *ngIf=booleanContainer>
+
+   <ng-template #Woods>
       <img src="../assets/woods.jpg" alt="image">
       <p>{{booleanContainer}}</p>
-   </div> -->
+    </ng-template> -->
 </app-cabecera>
